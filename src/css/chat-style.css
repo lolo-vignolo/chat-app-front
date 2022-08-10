@@ -160,7 +160,7 @@ img {
 
 .mesgs {
   float: left;
-  height: 100vh;
+  height: 92vh;
   padding: 30px 15px 0 25px;
   width: 60%;
 }
@@ -211,7 +211,7 @@ img {
 }
 
 .msg_history {
-  height: 90%;
+  height: 85%;
   overflow-y: auto;
 }
 
@@ -249,7 +249,7 @@ textarea {
   }
 
   .inbox_msg {
-    height: 95vh;
+    height: 93.5vh;
   }
   .mesgs {
     float: left;
@@ -261,8 +261,9 @@ textarea {
     background-color: black;
     color: #7674fe;
     font-weight: 700;
-    height: 2rem;
+    height: 3rem;
     width: 100%;
+    font-size: 22px;
   }
 
   .type_msg {
@@ -274,5 +275,9 @@ textarea {
 
   .text-center {
     width: 30%;
+  }
+
+  .messaging {
+    height: 94vh;
   }
 }
