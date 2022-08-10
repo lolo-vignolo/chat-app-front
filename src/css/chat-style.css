@@ -160,7 +160,7 @@ img {
 
 .mesgs {
   float: left;
-  height: 92vh;
+  height: 100vh;
   padding: 30px 15px 0 25px;
   width: 60%;
 }
@@ -241,8 +241,10 @@ textarea {
 }
 
 @media screen and (max-width: 600px) {
+  html,
   body {
-    height: 80vh;
+    height: 70%;
+    margin: 0;
   }
   .inbox_people {
     width: 100%;
@@ -252,11 +254,11 @@ textarea {
   }
 
   .inbox_msg {
-    height: 80vh;
+    height: 75vh;
   }
   .mesgs {
     float: left;
-    height: 83vh;
+    height: 80vh;
     padding: 30px 15px 0 25px;
     width: 60%;
   }
@@ -281,10 +283,10 @@ textarea {
   }
 
   .messaging {
-    height: 88vh;
+    height: 85vh;
   }
   .msg_history {
-    height: 80%;
+    height: 75%;
     overflow-y: auto;
   }
 }
