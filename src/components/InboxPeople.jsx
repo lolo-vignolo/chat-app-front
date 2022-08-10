@@ -4,10 +4,10 @@ import SideBar from './SideBar';
 
 const InboxPeople = () => {
   return (
-    <div className="inbox_people">
+    <>
       <Searchbox />
       <SideBar />
-    </div>
+    </>
   );
 };
 

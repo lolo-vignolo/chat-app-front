@@ -10,10 +10,10 @@ img {
 
 .inbox_people {
   background: #f8f8f8 none repeat scroll 0 0;
+  border-right: 1px solid #c4c4c4;
   float: left;
   overflow: hidden;
   width: 40%;
-  border-right: 1px solid #c4c4c4;
 }
 
 .inbox_msg {
@@ -34,15 +34,15 @@ img {
 
 .srch_bar {
   display: inline-block;
+  padding: 5px;
   text-align: right;
   width: 60%;
-  padding: 5px;
 }
 
 .headind_srch {
-  padding: 10px 10px 10px 10px;
-  overflow: hidden;
   border-bottom: 1px solid #c4c4c4;
+  overflow: hidden;
+  padding: 10px 10px 10px 10px;
 }
 
 .recent_heading h4 {
@@ -52,19 +52,19 @@ img {
 }
 
 .srch_bar input {
-  border: 1px solid #cdcdcd;
-  border-width: 0 0 1px 0;
-  width: 80%;
-  padding: 2px 0 4px 6px;
   background: none;
+  border-width: 0 0 1px 0;
+  border: 1px solid #cdcdcd;
+  padding: 2px 0 4px 6px;
+  width: 80%;
 }
 
 .srch_bar .input-group-addon button {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
   border: medium none;
-  padding: 0;
   color: #707070;
   font-size: 18px;
+  padding: 0;
 }
 
 .srch_bar .input-group-addon {
@@ -90,7 +90,7 @@ img {
 
 .chat_img {
   float: left;
-  width: 11%;
+  width: 8%;
 }
 
 .chat_ib {
@@ -122,7 +122,12 @@ img {
 
 .incoming_msg_img {
   display: inline-block;
-  width: 6%;
+  width: 4%;
+}
+.incoming_msg_img-right {
+  float: right;
+  width: 4%;
+  margin-right: 1rem;
 }
 
 .received_msg {
@@ -155,17 +160,17 @@ img {
 
 .mesgs {
   float: left;
+  height: 100vh;
   padding: 30px 15px 0 25px;
   width: 60%;
-  height: 100vh;
 }
 
 .sent_msg p {
   background: #7674fe none repeat scroll 0 0;
   border-radius: 3px;
+  color: #fff;
   font-size: 14px;
   margin: 0;
-  color: #fff;
   padding: 5px 10px 5px 12px;
   width: 100%;
 }
@@ -233,4 +238,41 @@ textarea {
   right: 0;
   width: 60%;
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .inbox_people {
+    width: 100%;
+  }
+  .input_msg_write {
+    width: 70%;
+  }
+
+  .inbox_msg {
+    height: 95vh;
+  }
+  .mesgs {
+    float: left;
+    height: 96vh;
+    padding: 30px 15px 0 25px;
+    width: 60%;
+  }
+  .open-button {
+    background-color: black;
+    color: #7674fe;
+    font-weight: 700;
+    height: 2rem;
+    width: 100%;
+  }
+
+  .type_msg {
+    display: flex !important;
+    flex-direction: row !important;
+    height: fit-content !important;
+    justify-content: space-between !important;
+  }
+
+  .text-center {
+    width: 30%;
+  }
 }

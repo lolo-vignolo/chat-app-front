@@ -8,12 +8,12 @@ import { addNewMessage, thunkGetUsers } from '../actions/chatActions';
 import { scrollBottomAnimated } from '../helpers/scrollBottom';
 
 const Context = ({ children }) => {
-  //TODO: mover a un haigher order component
   const dispatch = useDispatch();
   const { logged } = useSelector((state) => state.auth);
   // const { usuarios } = useSelector((state) => state.chat);
   const { socket, online, connectSocketTemporal, desconnectSocketTemo } =
-    useSocket('http://localhost:8080');
+    useSocket('https://chat-socket-mongo.herokuapp.com/');
+  // useSocket('http://localhost:8080');
 
   useEffect(() => {
     if (logged) {

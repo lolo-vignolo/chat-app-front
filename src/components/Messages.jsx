@@ -20,7 +20,7 @@ const Messages = () => {
   const { uid } = useSelector((state) => state.auth);
 
   return (
-    <div className="mesgs">
+    <>
       {/* <!-- Historia inicio --> */}
       <div className="msg_history" id="messagesDown">
         {mensajes.map((msg) => {
@@ -36,7 +36,7 @@ const Messages = () => {
       {/* <!-- Historia Fin --> */}
 
       <SendMsg />
-    </div>
+    </>
   );
 };
 

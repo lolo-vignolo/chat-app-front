@@ -2,12 +2,10 @@ import React from 'react';
 
 const SelectChat = () => {
   return (
-    <div className="middle-screen">
-      <div className="alert-info">
-        <hr />
-        <h3>Seleccione una persona</h3>
-        <span>Para comenzar una conversación</span>
-      </div>
+    <div className="alert-info">
+      <hr />
+      <h3>Seleccione una persona</h3>
+      <span>Para comenzar una conversación</span>
     </div>
   );
 };

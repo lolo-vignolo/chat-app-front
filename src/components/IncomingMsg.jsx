@@ -1,14 +1,12 @@
 import { horaMes } from '../helpers/horaMes';
+import receive from '../assets/receive.png';
 
 const IncomingMsg = ({ message }) => {
   const time = horaMes(message.createdAt);
   return (
     <div className="incoming_msg">
       <div className="incoming_msg_img">
-        <img
-          src="https://ptetutorials.com/images/user-profile.png"
-          alt="sunil"
-        />
+        <img src={receive} alt="sunil" />
       </div>
       <div className="received_msg">
         <div className="received_withd_msg">
